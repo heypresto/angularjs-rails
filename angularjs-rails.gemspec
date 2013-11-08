@@ -1,10 +1,9 @@
 # -*- encoding: utf-8 -*-
-require 'versionomy'
 require File.expand_path('../lib/angularjs-rails/version', __FILE__)
 
 Gem::Specification.new do |s|
 	s.name			= 'angularjs-rails'
-	s.version		= Versionomy.parse(AngularJS::Rails::VERSION).convert(:rubygems)
+	s.version		= AngularJS::Rails::VERSION
 	s.date			= '2013-09-06'
 	s.summary		= 'Angular.js on Rails'
 	s.description	= 'Injects Angular.js into your asset pipeline as well as other Angular modules.'
@@ -15,6 +14,5 @@ Gem::Specification.new do |s|
 	s.license   = 'MIT'
 
   s.add_development_dependency  'rake'
-  s.add_development_dependency  'versionomy'
   s.add_development_dependency  'nokogiri'
 end
